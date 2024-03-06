@@ -97,6 +97,7 @@ struct MainView: View {
             }
             //HscrollView end
             
+            //됏나?
         }
         .padding(20)
     }
