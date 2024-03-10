@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD9A3F222B995D6B006677D8 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9A3F212B995D6B006677D8 /* ColorExtensions.swift */; };
+		BD9A3F242B996368006677D8 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9A3F232B996368006677D8 /* NavigationView.swift */; };
+		BD9A3F282B99BA9C006677D8 /* BookMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9A3F272B99BA9C006677D8 /* BookMarkView.swift */; };
 		BDB40C452B98630F001E88C5 /* MyRealTripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB40C442B98630F001E88C5 /* MyRealTripApp.swift */; };
 		BDB40C472B98630F001E88C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB40C462B98630F001E88C5 /* ContentView.swift */; };
 		BDB40C492B986311001E88C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB40C482B986311001E88C5 /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD9A3F212B995D6B006677D8 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		BD9A3F232B996368006677D8 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		BD9A3F272B99BA9C006677D8 /* BookMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkView.swift; sourceTree = "<group>"; };
 		BDB40C412B98630F001E88C5 /* MyRealTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRealTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB40C442B98630F001E88C5 /* MyRealTripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRealTripApp.swift; sourceTree = "<group>"; };
 		BDB40C462B98630F001E88C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +40,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD9A3F202B995D58006677D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD9A3F212B995D6B006677D8 /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD9A3F262B99BA6C006677D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BDB40C462B98630F001E88C5 /* ContentView.swift */,
+				BD9A3F232B996368006677D8 /* NavigationView.swift */,
+				BDB40C522B98635B001E88C5 /* MainView.swift */,
+				BD9A3F272B99BA9C006677D8 /* BookMarkView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BDB40C382B98630F001E88C5 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				BDB40C442B98630F001E88C5 /* MyRealTripApp.swift */,
-				BDB40C462B98630F001E88C5 /* ContentView.swift */,
-				BDB40C522B98635B001E88C5 /* MainView.swift */,
+				BD9A3F262B99BA6C006677D8 /* Views */,
+				BD9A3F202B995D58006677D8 /* Extensions */,
 				BDB40C482B986311001E88C5 /* Assets.xcassets */,
 				BDB40C4A2B986311001E88C5 /* Preview Content */,
 			);
@@ -142,7 +167,10 @@
 			files = (
 				BDB40C472B98630F001E88C5 /* ContentView.swift in Sources */,
 				BDB40C532B98635B001E88C5 /* MainView.swift in Sources */,
+				BD9A3F242B996368006677D8 /* NavigationView.swift in Sources */,
 				BDB40C452B98630F001E88C5 /* MyRealTripApp.swift in Sources */,
+				BD9A3F282B99BA9C006677D8 /* BookMarkView.swift in Sources */,
+				BD9A3F222B995D6B006677D8 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
