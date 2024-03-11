@@ -38,7 +38,7 @@ struct MainView: View {
                     HStack(spacing: 15){
                         //TODO: - 버튼들 클릭하면 각자 페이지 이동하기
                         Button{
-                            
+                            Toast.shared.present(title: "위시리스트에서 제외되었어요", symbol: "bookmark.fill", bg: Color("lightGray"), timing: .short)
                         }label: {
                             VStack{
                                 Image(systemName: "mountain.2.fill")
@@ -46,7 +46,7 @@ struct MainView: View {
                             }
                         }
                         Button{
-                            
+                            Toast.shared.present(title: "위시리스트에 추가되었어요", symbol: "bookmark.fill", tint: .white, bg: Color("skyblue"), timing: .short)
                         }label: {
                             VStack{
                                 Image(systemName: "airplane")

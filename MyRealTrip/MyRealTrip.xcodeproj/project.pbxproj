@@ -15,6 +15,7 @@
 		BDB40C492B986311001E88C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB40C482B986311001E88C5 /* Assets.xcassets */; };
 		BDB40C4C2B986311001E88C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB40C4B2B986311001E88C5 /* Preview Assets.xcassets */; };
 		BDB40C532B98635B001E88C5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB40C522B98635B001E88C5 /* MainView.swift */; };
+		BDECA40C2B9AA15600D5D8FE /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDECA40B2B9AA15600D5D8FE /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BDB40C482B986311001E88C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDB40C4B2B986311001E88C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDB40C522B98635B001E88C5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BDECA40B2B9AA15600D5D8FE /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		BDB40C432B98630F001E88C5 /* MyRealTrip */ = {
 			isa = PBXGroup;
 			children = (
+				BDECA40A2B9AA13E00D5D8FE /* Helpers */,
 				BDB40C442B98630F001E88C5 /* MyRealTripApp.swift */,
 				BD9A3F262B99BA6C006677D8 /* Views */,
 				BD9A3F202B995D58006677D8 /* Extensions */,
@@ -93,6 +96,14 @@
 				BDB40C4B2B986311001E88C5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BDECA40A2B9AA13E00D5D8FE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BDECA40B2B9AA15600D5D8FE /* Toast.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				BDB40C452B98630F001E88C5 /* MyRealTripApp.swift in Sources */,
 				BD9A3F282B99BA9C006677D8 /* BookMarkView.swift in Sources */,
 				BD9A3F222B995D6B006677D8 /* ColorExtensions.swift in Sources */,
+				BDECA40C2B9AA15600D5D8FE /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,13 @@ struct ContentView: View {
 
     var body: some View {
         VStack(spacing: 0) {
+            //toast append
+//            Button{
+//                Toast.shared.present(title: "", symbol: "")
+//            } label: {
+//                Text("Button")
+//            }
+            
             ZStack{
                 switch selectedTab{
                 case 0 :
@@ -39,7 +46,7 @@ struct ContentView: View {
                 
 
         }
-        .padding(0)
+        
     }
 }
 
@@ -76,5 +83,7 @@ struct TabBar:View {
 }
 
 #Preview {
-    ContentView()
+    RootView{
+        ContentView()
+    }
 }

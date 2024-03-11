@@ -22,8 +22,12 @@ class Product: Identifiable {
 struct BookMarkView: View {
     @State private var selected : Int = 0
     var menus = ["전체", "투어/티켓", "숙소", "패키지"]
-    
     var products = [Product(), Product(), Product()]
+    
+    let columns = [
+        GridItem(.adaptive(minimum: 170))
+    ]
+    
     var body: some View {
         VStack(alignment: .leading){
             Text("저장됨")
@@ -53,8 +57,10 @@ struct BookMarkView: View {
                 Spacer()
             }
             ScrollView{
-                ForEach(products){product in
-                    BookmarkedItem(product: product)
+                LazyVGrid(columns: columns,spacing: 20) {
+                    ForEach(products){product in
+                        BookmarkedItem(product: product)
+                    }
                 }
                 
             }
@@ -71,8 +77,12 @@ struct BookmarkedItem:View {
             Image(product.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: UIScreen.main.bounds.width / 2 - 20, height: UIScreen.main.bounds.width / 2 - 20)
+                .frame(width: 170, height: 170)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
+                .overlay(
+                    BookMarkBtn()
+                    ,alignment: .topTrailing
+                )
             Text(product.name)
                 .bold()
                 .lineLimit(2)
@@ -84,8 +94,27 @@ struct BookmarkedItem:View {
                 .foregroundStyle(.gray)
             
         }
-        .frame(width: UIScreen.main.bounds.width / 2 - 20)
+        .frame(width: 170)
         
+    }
+}
+
+
+struct BookMarkBtn:View {
+    //TODO: - 취소되었습니다. 토스트띄우기 & 
+    @State private var isOn : Bool = true
+    
+    var body: some View {
+        Image(systemName: isOn ? "bookmark.fill" : "bookmark")
+            .resizable()
+            .frame(width: 23, height: 30)
+            .foregroundStyle(isOn ? .yellow : .white)
+            .shadow(radius: 10)
+            .padding(10)
+            .onTapGesture {
+                isOn.toggle()
+                Toast.shared.present(title: "위시리스트에서 제외되었어요", symbol: "bookmark.fill")
+            }
     }
 }
 #Preview {
